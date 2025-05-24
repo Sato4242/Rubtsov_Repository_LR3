@@ -17,6 +17,11 @@ void checkFirstLastDigit(int num) {
         << "начинается и заканчивается одной цифрой\n";
 }
 
+void checkLastDigitOdd(int num) {
+    cout << "Последняя цифра числа " << num << " - "
+        << (num % 10 % 2 ? "нечетная\n" : "четная\n");
+}
+
 int inputNumber() {
     string input;
     cout << "Введите натуральное число: ";

@@ -4,6 +4,15 @@
 
 using namespace std;
 
+void showMenu() {
+    cout << "\nМеню операций:\n";
+    cout << "1. Ввести новое число\n";
+    cout << "2. Проверить первую и последнюю цифру\n";
+    cout << "3. Проверить нечетность последней цифры\n";
+    cout << "4. Выход\n";
+    cout << "Выберите операцию: ";
+}
+
 int main() {
     setlocale(LC_ALL, "rus");
     int currentNum = 0;

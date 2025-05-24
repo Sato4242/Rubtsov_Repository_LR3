@@ -4,6 +4,26 @@
 
 using namespace std;
 
+bool isNumber(const string& str) {
+    for (char c : str) {
+        if (!isdigit(c)) return false;
+    }
+    return !str.empty();
+}
+
+int inputNumber() {
+    string input;
+    cout << "Введите натуральное число: ";
+    cin >> input;
+
+    while (!isNumber(input)) {
+        cout << "Ошибка! Введите натуральное число: ";
+        cin >> input;
+    }
+
+    return stoi(input);
+}
+
 void showMenu() {
     cout << "\nМеню операций:\n";
     cout << "1. Ввести новое число\n";

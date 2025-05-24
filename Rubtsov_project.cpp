@@ -11,6 +11,12 @@ bool isNumber(const string& str) {
     return !str.empty();
 }
 
+void checkFirstLastDigit(int num) {
+    string s = to_string(num);
+    cout << "Число " << num << (s[0] == s.back() ? " " : " не ")
+        << "начинается и заканчивается одной цифрой\n";
+}
+
 int inputNumber() {
     string input;
     cout << "Введите натуральное число: ";
